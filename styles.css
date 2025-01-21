@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.container h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#quote {
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+.container-quote {
+    width: 100%;
+    max-width: 400px;
+    min-height: 200px;
+display: hidden;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 20px;
+background: transparent;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    #quote {
+        font-size: 1.2rem;
+    }
+}
+
+/* For devices smaller than 480px */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    #quote {
+        font-size: 1rem;
+    }
+}
+
+#generate {
+    background: #28a745;
+}
+
+#generate:hover {
+    background: #218838;
+}
+
+#funny {
+    background: #ffc107;
+}
+
+#funny:hover {
+    background: #d39e00;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
